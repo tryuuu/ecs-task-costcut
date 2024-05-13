@@ -7,7 +7,7 @@ cd tf
 ```
 
 terraformを初期化
-````
+```
 terraform init
 ```
 
