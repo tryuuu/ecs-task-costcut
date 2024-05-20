@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_cloudwatch_event_rule" "stop_ecs_task" {
   name                = "stop-ecs-task-rule"
-  schedule_expression = "cron(30 10 * * ? *)" # utc時間であることに注意
+  schedule_expression = "cron(30 10 * * ? *)"
 }
 
 resource "aws_cloudwatch_event_rule" "start_ecs_task" {
